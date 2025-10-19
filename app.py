@@ -100,8 +100,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.divider()
-st.markdown("<p class='subtitle'>Your AI-powered medical assistant for quick health insights</p>", unsafe_allow_html=True)
-st.divider()
+
 
 # -------------------- SIDEBAR --------------------
 with st.sidebar:
