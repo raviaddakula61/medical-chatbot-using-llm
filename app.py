@@ -23,9 +23,24 @@ st.set_page_config(
 # -------------------- CUSTOM STYLES --------------------
 st.markdown("""
     <style>
+    /* Transparent background for full app */
     .stApp {
-        background-color: #f4f6fb;
+        background: transparent !important;
     }
+
+    /* Remove padding, ensure clean layout */
+    .main {
+        background: transparent !important;
+        color: #0f172a;
+    }
+
+    /* Medical-blue subtle gradient background (optional) */
+    body {
+        background: linear-gradient(to right, #e6f7ff, #ffffff);
+        background-attachment: fixed;
+    }
+
+    /* Title and subtitles */
     .main-title {
         text-align: center;
         font-size: 3rem;
@@ -39,6 +54,8 @@ st.markdown("""
         color: #475569;
         margin-bottom: 25px;
     }
+
+    /* User and Bot Chat Bubbles */
     .chat-bubble-user {
         background-color: #dbeafe;
         padding: 12px 18px;
@@ -59,6 +76,8 @@ st.markdown("""
         border-left: 6px solid #0284c7;
         box-shadow: 0px 2px 6px rgba(0,0,0,0.05);
     }
+
+    /* Chat titles and footer */
     .chat-title {
         font-size: 1.1rem;
         font-weight: 600;
@@ -73,6 +92,7 @@ st.markdown("""
     }
     </style>
 """, unsafe_allow_html=True)
+
 
 # -------------------- HEADER --------------------
 st.image("Screenshot 2025-10-19 122118.png", width=160)
