@@ -25,7 +25,7 @@ GROQ_MODEL_NAME = "llama-3.1-8b-instant"  # Change to any supported Groq model
 llm = ChatGroq(
     model=GROQ_MODEL_NAME,
     temperature=0.5,
-    max_tokens=1024,
+    max_tokens=512,
     api_key=GROQ_API_KEY,
 )
 
