@@ -2,7 +2,7 @@ import os
 from dotenv import load_dotenv
 
 # --- Load environment variables safely ---
-load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env"))
+load_dotenv(dotenv_path=os.path.join(os.path.dirname(__file__), ".env")) 
 
 # Debug print to verify (you can remove later)
 print("Loaded GROQ_API_KEY:", os.environ.get("GROQ_API_KEY"))
